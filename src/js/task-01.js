@@ -11,4 +11,4 @@
 // Количество элементов: 4
 
 
- console.log(ul.querySelectorAll(li.item));
+ console.log(document.querySelectorAll(`ul#categories li.item`).length);
