@@ -5,5 +5,5 @@ const text = document.querySelector('#text');
 input.addEventListener(`input`, onInput);
 
 function onInput(event) {
-    text.style.fontSize = `${Number(input.value)/4}pt`;
+    text.style.fontSize = `${Number(input.value)/2}pt`;
 };
