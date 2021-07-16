@@ -8,8 +8,3 @@ console.log(
 Количество элементов: ${el.querySelectorAll(`li`).length}`);
 }
 );
-
-
-
-
-
