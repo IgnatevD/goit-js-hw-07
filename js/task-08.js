@@ -26,14 +26,13 @@ const randomColorG = parseInt(Math.random() * 255);
 const randomColorB = parseInt(Math.random() * 255);
 
 btRender.addEventListener(`click`, onInput);
-btRender.addEventListener(`click`, onInput);
 
 function onInput(el) {
     for (let i = 0; i < 10; i++) {
-
-    }
+    const clone = div.cloneNode(true);
     div.style.width = `30px`;
     div.style.height = `30px`;
     div.style.backgroundColor = `rgb(${randomColorR},${randomColorG},${randomColorB})`;
+    }
 }
 

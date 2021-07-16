@@ -4,7 +4,10 @@ inputNoj.addEventListener(`change`, onInput);
 
 function onInput(event) {
    const isValid = event.currentTarget.value.length === +inputNoj.dataset.length;
-   inputNoj.classList.add(isValid ? 'valid' : 'invalid');
+   
+   if (isValid) inputNoj.classList.remove('invalid') & inputNoj.classList.add('valid');
+
+   if (!isValid) inputNoj.classList.remove('valid') & inputNoj.classList.add('invalid');
 }
 
 
