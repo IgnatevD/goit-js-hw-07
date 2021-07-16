@@ -21,12 +21,19 @@ const btRender = document.querySelector('button[data-action="render"]');
 const btDestroy = document.querySelector('button[data-action="destroy"]');
 let numberDiv = 0;
 // btRender.addEventListener(`click`, onInputfn);
+const randomColorR = parseInt(Math.random() * 255);
+const randomColorG = parseInt(Math.random() * 255);
+const randomColorB = parseInt(Math.random() * 255);
 
-
-input.addEventListener(`c`, onInput);
+btRender.addEventListener(`click`, onInput);
+btRender.addEventListener(`click`, onInput);
 
 function onInput(el) {
-    numberDiv = el.currentTarget.value;
-    console.log(el.currentTarget.value);
+    for (let i = 0; i < 10; i++) {
+
+    }
+    div.style.width = `30px`;
+    div.style.height = `30px`;
+    div.style.backgroundColor = `rgb(${randomColorR},${randomColorG},${randomColorB})`;
 }
 
